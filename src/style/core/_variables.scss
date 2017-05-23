@@ -1,0 +1,26 @@
+// ===== local colors =====
+$ralph-red: #c42e2e;
+$orange: #ffa600;
+$blue: #82d2e5;
+
+
+// ===== global colors =====
+$brand-color: $ralph-red;
+
+$link-color: $blue;
+$link-color-hov: $orange;
+
+$title-color: $brand-color;
+
+// ===== fonts =====
+$font:            'OpenSans', sans-serif;
+$font-bold:       'OpenSans-Bold', sans-serif;
+$font-light:      'OpenSans-Light', sans-serif;
+$font-semibold:   'OpenSans-Semibold', sans-serif;
+
+// $font-primary: 'Roboto', sans-serif;
+// $font-secondary: Arial, Helvetica, sans-serif;
+
+// ===== sizes =====
+$radius-button: 5px;
+$radius-tab: 5px;
