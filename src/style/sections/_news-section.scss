@@ -1,0 +1,107 @@
+.news-section {
+  background-color: $highlight;
+  .container {
+    padding-bottom: 280px;
+  }
+}
+.news-section__header {
+  padding: 80px 0;
+  text-align: center;
+}
+.news-section__title {
+  font-family: $font-thin;
+  font-size: 35px;
+  color: #fff;
+}
+
+.news-section__list {
+  display: flex;
+  max-width: 950px;
+  margin-right: auto;
+  margin-left: auto;
+}
+.news-section__left,
+.news-section__right {
+  width: 50%;
+}
+.news-section__item {
+  font-family: $font-light;
+  font-size: 18px;
+  position: relative;
+  margin-bottom: 45px;
+  padding-left: 60px;
+  color: #fff;
+  &::before {
+    position: absolute;
+    top: -10px;
+    left: 0;
+    display: block;
+    width: 38px;
+    height: 38px;
+    content: '';
+    background-image: url('../img/news-sprite.png');
+    background-repeat: no-repeat;
+  }
+}
+.news-section__item--one::before {
+  background-position: 0 0;
+}
+.news-section__item--two::before {
+  background-position: 0 -67px;
+}
+.news-section__item--three::before {
+  background-position: 0 -137px;
+}
+.news-section__item--four::before {
+  background-position: 0 -203px;
+}
+.news-section__item--five::before {
+  background-position: 0 -273px;
+}
+.news-section__item--six::before {
+  background-position: -500px 0;
+}
+.news-section__item--seven::before {
+  background-position: -500px -67px;
+}
+.news-section__item--eight::before {
+  background-position: -500px -137px;
+}
+.news-section__item--nine::before {
+  background-position: -501px -203px;
+}
+.news-section__item--ten::before {
+  background-position: -500px -273px;
+}
+
+.news-section__video {
+  position: absolute;
+  z-index: 10;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  transform: translateY(45%);
+  &::before {
+    position: absolute;
+    z-index: 10;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    display: block;
+    height: 600px;
+    content: '';
+    pointer-events: none;
+    background-image: url('../img/news-video-2.png');
+    background-repeat: no-repeat;
+    background-position: 50% 0;
+  }
+  iframe {
+    position: relative;
+    display: block;
+    width: 710px;
+    height: 400px;
+    margin: 30px auto 0;
+  }
+}
