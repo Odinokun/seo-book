@@ -13,13 +13,15 @@ $link-color: $blue;
 $link-color-hov: $orange;
 $title-color: $brand-color;
 
+
 $highlight: $red;
 $btn-color: $yellow;
+$btn-color-hover: darken($yellow, 5%);
 
 
 // ===== fonts =====
-$font:            'Roboto-Light', sans-serif;
-$font-light:      'Roboto-Light', sans-serif;
-$font-medium:     'Roboto-Medium', sans-serif;
-$font-lightitalic:'Roboto-LightItalic', sans-serif;
-$font-thin:       'Roboto-Thin', sans-serif;
+$font:              'Roboto-Light', sans-serif;
+$font-light:        'Roboto-Light', sans-serif;
+$font-medium:       'Roboto-Medium', sans-serif;
+$font-lightitalic:  'Roboto-LightItalic', sans-serif;
+$font-thin:         'Roboto-Thin', sans-serif;
