@@ -1,0 +1,33 @@
+//begin form-section
+section.form-section
+  .container
+    .form-section__inn
+      .form-section__left
+        img.form-section__monitor(src="assets/img/second-section-monitor.png", alt="Монитор с графиком")
+
+      .form-section__right
+        h4.form-section__red Специальное предложение
+        h3.form-section__title
+          |Успей купить 
+          br
+          |запись семинара за 297 руб.
+
+        p.form-section__text 
+          |Через 27:18 минут цена поднимется
+          br
+          |до стандартной 5000 рублей
+
+        form.form-section__form
+          input(type="text" placeholder="Имя и фамилия" required)
+          input(type="email" placeholder="Ваш email" required)
+          input(type="phone" placeholder="Телефон" required)
+
+          // BEGIN Re-captcha
+          .re-captcha
+            .g-recaptcha(data-sitekey="6Ld1wCIUAAAAAOEjhUAP--2PNKWEjeXnTa81nkCb")
+          // END Re-captcha
+
+          input(type="submit" value='Купить запись за 297 руб.')
+
+
+//end   form-section
