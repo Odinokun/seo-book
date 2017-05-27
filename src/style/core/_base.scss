@@ -58,11 +58,6 @@ ul {
     padding: 3px 0;
   }
 }
-ul {
-  li {
-    // list-style-image: url('');
-  }
-}
 .main {
   position: relative;
 
@@ -74,16 +69,14 @@ ul {
   max-width: 1280px;
   margin: 0 auto;
   padding: 15px 25px;
-
-  @include m768() {
-    // padding: 10px 20px;
-  }
-  @include m425() {
-    // padding: 10px;
-  }
 }
 .header,
 .page-header,
 .footer {
   flex: 0 0 auto;
+}
+section .section__title {
+  @include m768() {
+    font-size: 28px;
+  }
 }

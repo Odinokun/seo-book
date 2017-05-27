@@ -42,10 +42,10 @@
 }
 .top-section__right {
   padding: 30px;
-    @include m1024() {
-      padding-right: 0;
 
-    }
+  @include m1024() {
+    padding-right: 0;
+  }
 }
 .top-section__header {
   position: relative;
@@ -113,6 +113,7 @@
   line-height: 1.4;
   margin: 0;
   color: #fff;
+
   @include m768() {
     text-align: center;
   }
@@ -121,7 +122,10 @@
   font-family: $font-thin;
   font-size: 60px;
   color: #fff;
+
   @include m768() {
-margin-bottom: 20px;
-display: inline-block;}}
+    display: inline-block;
+    margin-bottom: 20px;
+  }
+}
 //END top banner

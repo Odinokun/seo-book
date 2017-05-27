@@ -40,6 +40,11 @@
     @content;
   }
 }
+@mixin m555 {
+  @media screen and (max-width: 555px) {
+    @content;
+  }
+}
 @mixin m425 {
   @media screen and (max-width: 425px) {
     @content;
