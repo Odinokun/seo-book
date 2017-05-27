@@ -47,6 +47,9 @@
 }
 .speaker__banner {
   margin-bottom: 60px;
+  img {
+    width: 100%;
+  }
 }
 .speaker__text {
   font-family: $font-medium;
