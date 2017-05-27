@@ -20,11 +20,20 @@
 .news-section__header {
   padding: 80px 0;
   text-align: center;
+
+  @include m768() {
+    padding-top: 20px;
+    padding-bottom: 60px;
+  }
 }
 .news-section__title {
   font-family: $font-thin;
   font-size: 35px;
   color: #fff;
+
+  @include m768() {
+    font-size: 30px;
+  }
 }
 
 .news-section__list {
@@ -154,4 +163,5 @@
   width: 100%;
   max-width: 910px;
   margin: auto;
+  pointer-events: none;
 }

@@ -5,17 +5,32 @@
 
     align-items: center;
     justify-content: space-between;
+    @include m600() {
+      flex-direction: column;
+    }
   }
 }
 .footer__left {
   display: flex;
 
   align-items: center;
+  @include m600() {
+    margin-bottom: 10px;
+  }
+  @include m425() {
+    flex-direction: column;
+  }
 }
 .footer__social {
   display: flex;
   margin-right: 20px;
   border-right: 1px solid #a8a8a8;
+
+  @include m425() {
+    margin-right: 0;
+    margin-left: 20px;
+    border-right: none;
+  }
 }
 .footer__social-item {
   display: block;

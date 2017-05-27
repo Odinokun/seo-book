@@ -7,7 +7,7 @@
   @include m1024() {
     background-position: 35% 0;
   }
-  @include m800() {
+  @include m920() {
     background-color: #000;
     background-image: none;
   }
@@ -17,7 +17,7 @@
 
     justify-content: flex-end;
     align-items: center;
-    @include m800() {
+    @include m920() {
       min-height: 0;
 
       justify-content: center;
@@ -27,7 +27,7 @@
 .speaker-section__inn {
   width: 55%;
 
-  @include m800() {
+  @include m920() {
     width: 100%;
     max-width: 550px;
   }
@@ -38,7 +38,7 @@
   margin-bottom: 60px;
   color: #fff;
 
-  @include m800() {
+  @include m920() {
     margin-bottom: 40px;
     text-align: center;
   }
@@ -79,7 +79,7 @@
 .speaker__banner {
   margin-bottom: 60px;
 
-  @include m800() {
+  @include m920() {
     margin-bottom: 40px;
   }
   @include m425() {
@@ -93,7 +93,7 @@
   font-family: $font-medium;
   color: #fff;
 
-  @include m800() {
+  @include m920() {
     text-align: center;
   }
 }
@@ -122,8 +122,9 @@
   display: flex;
 
   align-items: center;
-  @include m800() {
+  @include m920() {
     justify-content: center;
+    margin-bottom: 20px;
   }
   @include m600() {
     flex-direction: column-reverse;
