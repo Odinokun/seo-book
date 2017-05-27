@@ -20,6 +20,11 @@
     @content;
   }
 }
+@mixin m920 {
+  @media screen and (max-width: 920px) {
+    @content;
+  }
+}
 @mixin m800 {
   @media screen and (max-width: 800px) {
     @content;
