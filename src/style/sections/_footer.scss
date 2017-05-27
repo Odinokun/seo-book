@@ -1,1 +1,63 @@
+.footer {
+  .container {
+    display: flex;
+    max-width: 100%;
 
+    align-items: center;
+    justify-content: space-between;
+  }
+}
+.footer__left {
+  display: flex;
+
+  align-items: center;
+}
+.footer__social {
+  display: flex;
+  margin-right: 20px;
+  border-right: 1px solid #a8a8a8;
+}
+.footer__social-item {
+  display: block;
+  overflow: hidden;
+  width: 25px;
+  height: 25px;
+  margin: 7px 20px 7px 0;
+  background-image: url('../img/footer-sprite.png');
+  background-repeat: no-repeat;
+  &.vk {
+    background-position: 0 0;
+  }
+  &.telegram {
+    background-position: -45px 0;
+  }
+  &.youtube {
+    background-position: -88px 0;
+  }
+  &.fb {
+    background-position: -132px 0;
+  }
+}
+.footer__contacts {
+  display: flex;
+  flex-direction: column;
+}
+.footer__contacts-item {
+  font-family: $font-light;
+  font-size: 16px;
+  display: inline-block;
+  margin-bottom: 5px;
+  text-decoration: none;
+  color: #a8a8a8;
+  &:hover {
+    color: $highlight;
+  }
+}
+.footer__right-politic {
+  font-family: $font-light;
+  font-size: 16px;
+  color: #a8a8a8;
+  &:hover {
+    color: $highlight;
+  }
+}
