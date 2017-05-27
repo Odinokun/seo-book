@@ -9,21 +9,6 @@
   }
 }
 
-// @mixin pt($style: regular) {
-//   @if $style == regular {
-//     font-family: 'PTSans-Regular', Arial, sans-serif;
-//   }
-//   @if $style == light {
-//     font-family: 'PTSans-Italic', Arial, sans-serif;
-//   }
-//   @if $style == bold {
-//     font-family: 'PTSans-Bold', Arial, sans-serif;
-//   }
-//   @if $style == bolditalic {
-//     font-family: 'PTSans-BoldItalic', Arial, sans-serif;
-//   }
-// }
-
 // ===== responsive =====
 @mixin m1200 {
   @media screen and (max-width: 1200px) {
@@ -35,13 +20,18 @@
     @content;
   }
 }
+@mixin m800 {
+  @media screen and (max-width: 800px) {
+    @content;
+  }
+}
 @mixin m768 {
   @media screen and (max-width: 768px) {
     @content;
   }
 }
-@mixin m555 {
-  @media screen and (max-width: 555px) {
+@mixin m600 {
+  @media screen and (max-width: 600px) {
     @content;
   }
 }

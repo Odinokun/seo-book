@@ -1,24 +1,50 @@
 .speaker-section {
   background-image: url('../img/bg-speaker-section.jpg');
   background-repeat: no-repeat;
-  background-position: 50% 0;
+  background-position: 45% 0;
   background-size: cover;
+
+  @include m1024() {
+    background-position: 35% 0;
+  }
+  @include m800() {
+    background-color: #000;
+    background-image: none;
+  }
   .container {
     display: flex;
     min-height: 800px;
 
     justify-content: flex-end;
     align-items: center;
+    @include m800() {
+      min-height: 0;
+
+      justify-content: center;
+    }
   }
 }
 .speaker-section__inn {
   width: 55%;
+
+  @include m800() {
+    width: 100%;
+    max-width: 550px;
+  }
 }
 .speaker__title {
   font-family: $font-thin;
   font-size: 35px;
   margin-bottom: 60px;
   color: #fff;
+
+  @include m800() {
+    margin-bottom: 40px;
+    text-align: center;
+  }
+  @include m425() {
+    margin-bottom: 20px;
+  }
 }
 .speaker__list {
   margin: 0;
@@ -32,6 +58,11 @@
   padding-left: 45px;
   list-style: none;
   color: #fff;
+
+  @include m425() {
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
   &::before {
     position: absolute;
     top: 13px;
@@ -47,6 +78,13 @@
 }
 .speaker__banner {
   margin-bottom: 60px;
+
+  @include m800() {
+    margin-bottom: 40px;
+  }
+  @include m425() {
+    margin-bottom: 20px;
+  }
   img {
     width: 100%;
   }
@@ -54,6 +92,10 @@
 .speaker__text {
   font-family: $font-medium;
   color: #fff;
+
+  @include m800() {
+    text-align: center;
+  }
 }
 .speaker__red-text {
   color: $highlight;
@@ -80,10 +122,20 @@
   display: flex;
 
   align-items: center;
+  @include m800() {
+    justify-content: center;
+  }
+  @include m600() {
+    flex-direction: column-reverse;
+  }
 }
 .speaker-counter {
   font-family: $font-thin;
   font-size: 50px;
   padding: 0 30px;
   color: #fff;
+
+  @include m600() {
+    margin-bottom: 20px;
+  }
 }

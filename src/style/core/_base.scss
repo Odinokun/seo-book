@@ -75,8 +75,3 @@ ul {
 .footer {
   flex: 0 0 auto;
 }
-section .section__title {
-  @include m768() {
-    font-size: 28px;
-  }
-}
