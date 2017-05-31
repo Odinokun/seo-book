@@ -1,4 +1,5 @@
 .speaker-section {
+  position: relative;
   background-image: url('../img/bg-speaker-section.jpg');
   background-repeat: no-repeat;
   background-position: 45% 0;
@@ -123,8 +124,9 @@
 
   align-items: center;
   @include m920() {
-    justify-content: center;
     margin-bottom: 20px;
+
+    justify-content: center;
   }
   @include m600() {
     flex-direction: column-reverse;

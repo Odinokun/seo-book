@@ -1,5 +1,5 @@
 //begin news-section
-section.news-section
+section.news-section#news-section
   .container
     .news-section__header
       h2.news-section__title Вы узнаете много новых полезных фишек:
@@ -18,7 +18,8 @@ section.news-section
         .news-section__item.news-section__item--nine Сколько времени нужно, чтобы продвинуть сайт
         .news-section__item.news-section__item--ten Быстрые результаты в SEO
 
-    .news-section__video
-      iframe(src="https://www.youtube.com/embed/FBBIHe3Rrms?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen)
-      img(src="assets/img/news-video.png", alt="Рамка для видое").news-section__video-img
+    .news-section__video#news-section__video
+      iframe(src="https://www.youtube.com/embed/FBBIHe3Rrms?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen)#video
+      img(src="assets/img/news-video.png", alt="Рамка для видое").news-section__video-img--active.button
+      img(src="assets/img/news-video-2.png", alt="Рамка для видое").news-section__video-img.button
 //end   news-section

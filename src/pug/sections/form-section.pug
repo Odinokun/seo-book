@@ -1,5 +1,9 @@
 //begin form-section
-section.form-section
+section.form-section#form-section
+  a(href="#top-section").mouse-icon__wrap
+    .mouse-icon
+      .wheel
+
   .container
     .form-section__inn
       .form-section__left
@@ -13,7 +17,12 @@ section.form-section
           |запись семинара за 297 руб.
 
         p.form-section__text 
-          |Через 27:18 минут цена поднимется
+          |Через 
+          span.counter__minutes 30
+          |:
+          span.counter__seconds 00
+          =" "
+          |минут цена поднимется
           br
           |до стандартной 5000 рублей
 

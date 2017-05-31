@@ -1,5 +1,5 @@
 //begin speaker-section
-section.speaker-section
+section.speaker-section#speaker-section
   .container
     .speaker-section__inn
       h2.speaker__title
@@ -25,7 +25,12 @@ section.speaker-section
         span.speaker__cross-text вместо 5000 руб.
 
       .speaker-footer
-        a(href="#").buy-btn Купить запись
-        .speaker-counter 28 : 48
+        a(href="#form-section").buy-btn Купить запись
+        .speaker-counter
+          span.counter__minutes 30
+          =" "
+          |:
+          =" "
+          span.counter__seconds 00
 
 //end   speaker-section

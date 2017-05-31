@@ -8,4 +8,20 @@ $(function() {
   require('./modules/smoothScroll')();
   // end   Chrome Smooth Scroll
 
+  // begin scroll 2 ancor
+  require('./modules/scroll2ancor')();
+  // end scroll 2 ancor
+
+  // begin timer
+  require('./modules/timer')();
+  // end timer
+
+  // begin video
+  require('./modules/video')();
+  // end video
+
+  // begin modal window
+  require('./modules/modal')();
+  // end modal window
+
 });

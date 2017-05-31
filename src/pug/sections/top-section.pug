@@ -1,5 +1,6 @@
 //begin top-section
-section.top-section
+section.top-section#top-section
+
   .container
     .top-section__left
       img.top-section__book(src="assets/img/top-section-book.png", alt="Книга - SEO для бизнеса")
@@ -10,12 +11,18 @@ section.top-section
         p.top-section__subtitle Книга уже отправлена на ваш email.
       p.top-section__text Дайте нам 5-10 минут на ее доставку..
   .top-section__banner
+    a(href="#second-section").mouse-icon__wrap
+      .mouse-icon
+        .wheel
     .top-section__banner-left
       p.top-section__banner-text
         |Пока вы ожидаете доставку -
         br
         |ознакомьтесь со специальным предложением, которое исчезнет через 30 минут.
     .top-section__banner-right
-      span.top-section__counter 29:48
+      span.top-section__counter 
+        span.counter__minutes 30
+        |:
+        span.counter__seconds 00
 
 //end   top-section
